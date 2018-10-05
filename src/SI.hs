@@ -33,12 +33,12 @@ type Candela1 = Candela Pos1
 type Hertz = Second Neg1
 
 addSI :: SI m s kg a k cd
-      -> SI m s a k cd kg
+      -> SI m s kg a k cd
       -> SI m s kg a k cd
 addSI (SI n) (SI n') = SI (n Prelude.+ n')
 
 subtractSI :: SI m s kg a k cd
-           -> SI m s a k cd kg
+           -> SI m s kg a k cd
            -> SI m s kg a k cd
 subtractSI (SI n) (SI n') = SI (n Prelude.- n')
 
