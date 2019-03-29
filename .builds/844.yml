@@ -1,0 +1,1 @@
+{"image":"nixos/unstable","packages":["nixpkgs.haskell.compiler.ghc844","nixpkgs.cabal-install","nixpkgs.binutils"],"repositories":{"nixpkgs":"https://nixos.org/channels/nixpkgs-unstable"},"sources":["https://github.com/fgaz/si-units.git"],"tasks":[{"build":"cd si-units\ncabal new-update || cabal update\ncabal new-build all\n"}]}
